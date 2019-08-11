@@ -16,7 +16,7 @@ tag: 博客
 ### 真正结束
 但是，对于我来说仅仅是个开始，在之后我又使用kubectl describe po、kubectl logs、journalctl -e这些状态和日志查询命令尝试并捣鼓了半天才成功使pod运行起来。为什么呢？前面提到了，控制台的后台是我写的，但是在创建deployment这个方法里我没有传入deployment的参数项，所以为了实现ubuntu容器持续运行，我必须得修改后台代码，新增两个参数，command和arg,添加了这两个参数后，我又要尝试如何传这两个参数才能得到我要的效果，因为之前我没添加过这两个参数创建pod，不过这两个参数就和他们的名称一样，一个是命令，一个是参数，command传/bin/bash这些内容，arg可以传-it或者前面命令需要的参数，到这里，问题就都解决了。
 <div align="center">
-	<img src="https://upload-images.jianshu.io/upload_images/13735327-ff041193ff1910d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" height="300" width="480" />
-	<span>我啓動起來的pod</span>
+	<img src="/images/posts/wzw/page1/pod.png" height="300" width="480" />
+	<span>我启动起來的pod</span>
 </div> 
 转载请注明原地址，王作文的博客：[https://ghjhhyuyuy.github.io](https://ghjhhyuyuy.github.io) 谢谢！
