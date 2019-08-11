@@ -1,77 +1,75 @@
-# ----
-# Site
+# Basic
+title: 潘柏信
+subtitle: 个人站
+description: 欢迎来到我的个人站~
+# 头像里面的标题
+avatarTitle: leopardpan
+# 头像里面的描述
+avatarDesc: iOS / 机器学习
+url: "http://baixin.io"
 
-title: Cause Template
-url: https://clean-oryx.cloudvent.net
-baseurl:
-google_analytics_key:
+# Comment
+comment:
+    disqus: leopard
+    # gitment: xxx // 需要修改 comments.html中的client_id和client_secret
+    # uyan: 2143225  # 有言id,登录有言官网申请
 
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: Jekyll template with example content for a not-for-profit organisation.
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+# Social
 social:
-  name: Cause Template
-  links:
-    - https://github.com/CloudCannon/cause-jekyll-template
+    weibo: 5366874726 
+    github: leopardpan
+    # zhihu: panpanleopard
+    # juejin: xxx
+    jianshu: 2ada30d8d0f7
+    # twitter: 
+    mail: leopardpan@icloud.com
 
-# -----
-# Build
 
-timezone: Etc/UTC
+# 百度统计 
+# 使用博客模板请去掉或者更换 id 
+baidu:
+    id: xxxx  
 
-collections:
-  staff_members:
-    _icon: account_circle
-    _hide_content: true
-    _options:
-      image:
-        width: 250
-        height: 250
+# Google Analytics
+# 使用博客模板请去掉或者更换 id
+ga:
+    id: xxxx  
+    host: auto  
 
-permalink: pretty
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      _options:
-        content:
-          width: 1880
-          height: 1880
-          uploads_dir: "/images/posts/"
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
+# 《----------------- 上面的信息修改成你自己的 ---------------------------》
+#
+#
+#  _post/ 下的文章更换成你自己的文章
+#  帮忙star一下，感谢~😆 地址： https://github.com/leopardpan/leopardpan.github.io
+#
+#
+# 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
 
-donation_embed: '<script src="https://donorbox.org/widget.js" type="text/javascript"></script><iframe src="https://donorbox.org/embed/give-sheep-the-vote?hide_donation_meter=true" height="685px" width="100%" style="max-width:425px; min-width:310px" seamless="seamless" id="dbox-form-embed" name="donorbox" frameborder="0" scrolling="no"></iframe>'
-newsletter_action: "//your-mailchimp-action-url.com"
 
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+permalink: /:year/:month/:title/
+# Format
+highlighter: rouge
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENCE
+textColor: #FF0000
 
-# -----------
-# CloudCannon
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: clear
 
-_options:
-  header_background_image:
-    width: 1880
-    height: 1880
-  newsletter_background_image:
-    width: 1880
-    height: 1880
+# The blog button should not be removed.
+blog_button:
+    title: 博客主页
+
+# Navigation buttons in the front page.s
+nav:
+    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 标签, description: tags, url: '/tags'}      
+    - {title: 关于我, description: about, url: '/about'}      
+    
+
+# Pagination
+gems: [jekyll-paginate,jekyll-sitemap]
+paginate: 20
+paginate_path: "page/:num/"
+
+

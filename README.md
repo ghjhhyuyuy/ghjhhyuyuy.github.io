@@ -1,79 +1,84 @@
-# Cause
+# leopard
 
-Not for profit themed template for Jekyll. Browse through a [live demo](https://clean-oryx.cloudvent.net/).
-Increase the web presence of a not for profit or cause website with this configurable theme.
+[leopard](http://baixin.io) 是一个简洁的博客模板，如果你也喜欢请 Star ，你的 Star 是我持续更新的动力, 谢谢 😄.
 
-![Cause](images/_screenshot.jpg)
+### 使用手册
 
-CloudCannon was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
+[Jekyll搭建个人博客](http://baixin.io/2016/10/jekyll_tutorials1/)  :  使用Jekyll搭建个人博客的教程，以及如果把博客模板修改成你自己的博客，里面也有大量的评论，及 Jekyll 搭建博客出现过的问题。
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
+[HEXO搭建个人博客](http://baixin.io/2015/08/HEXO%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/) : 使用 HEXO 基于 Github Page 搭建个人博客， 教程里面累计了大量提问和评论，如果你在搭建博客时遇到问题，可以看看这个教程。 
 
-## Features
 
-* Pre-built pages
-* Pre-styled components
-* Configurable footer
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* SEO tags
-* Google Analytics
-* [Donorbox](https://donorbox.org/)
-* [MailChimp](https://mailchimp.com/)
+### 使用条件
 
-## Setup
+Jekyll 支持 Mac 、Windows、ubuntu 、Linux 操作系统                     
+Jekyll 需要依赖：Ruby、bundler
 
-1. Add your site details in `_config.yml`.
-2. Add your Google Analytics to `_config.yml`.
-3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
 
-## Develop
+#### 安装Jekyll
 
-Cause was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+[Jekyll中文官方文档](http://jekyll.bootcss.com/) ， 如果你已经安装过了 Jekyll，可以忽略此处。
 
-Install the dependencies with [Bundler](http://bundler.io/):
+> $ gem install jekyll
 
-~~~bash
-$ bundle install
-~~~
+#### 获取博客模板
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+> $ git clone https://github.com/leopardpan/leopardpan.github.io.git
 
-~~~bash
-$ bundle exec jekyll serve
-~~~
+或者直接[下载博客](https://github.com/leopardpan/leopardpan.github.io/archive/master.zip)   
 
-## Editing
+进leopardpan.github.io/ 目录下， 开启本地服务 
 
-Cause is already optimised for updating pages, company details and footer elements in CloudCannon.
+> $ jekyll server
 
-## SEO Tag
+在浏览器输入 [127.0.0.1:4000](127.0.0.1:4000) ， 就可以看到博客效果了。
 
-This site uses the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) plugin. You should at least set a title in front matter on each page. Have a look at the [project page](https://github.com/jekyll/jekyll-seo-tag) for more options.
 
-## Google Analytics
+### 提示
 
-[Google Analytics](https://www.google.com/analytics/) is a third party website analytics tool. To install:
-1. Add your Google Analytics key to `_config.yml`
-2. Run your site in production `JEKYLL_ENV=production`. This is the default in CloudCannon and GitHub Pages.
+>* 如果你想使用我的模板，请把 _posts/ 目录下的文章都去掉。
+>* 修改 _config.yml 文件里面的内容为你自己的个人信息。
 
-## Donorbox
+如果在部署博客的时候发现问题，可以直接在[Issues](https://github.com/leopardpan/leopardpan.github.io/issues)里面提问。        
 
-[Donorbox](https://donorbox.org/) is a third party embeddable donation form for websites. To install:
 
-1. Set up a campaign on Donorbox
-2. Copy the embed code from the Dashboard screen
-3. Paste it into `donation_embed` in `_config.yml`
+### 把这个博客变成你自己的博客
 
-## Mailchimp
+根据上面【提示】修改过后，在你的github里创建一个username.github.io的仓库，username指的值你的github的用户名。      
+创建完成后，把我的这个模板使用git push到你的username.github.io仓库下就行了。
+搭建博客如果遇到问题可以看看我教程[Jekyll搭建个人博客](http://baixin.io/2016/10/jekyll_tutorials1/)。
 
-[Mailchimp](https://mailchimp.com/) is a third party embeddable newsletter for websites. To install:
 
-1. Set up a campaign on Mailchimp
-2. Find the embed code for the sign up form
-3. Copy the `<form>`'s action url
-4. Paste it into `newsletter_action` in `_config.yml`
+### 效果预览
 
-### Company details
+#### 头像效果
 
-* Reused around the site to save multiple editing locations.
-* Set in the *Data* / *Company* section.
+![](/images/readme//icon.gif)
+
+如果你只想要我博客里的头像效果，你只需要拿 leopardpan.github.io/_includes/side-panel.html 文件里面 `头像效果` 和 leopardpan.github.io/css/main.css 里面最后面 `头像效果` 部分就行了。
+
+
+***
+
+#### 博客首页   
+
+![](/images/readme//img4.png)   
+
+***  
+
+#### 文章详情   
+
+
+
+![](/images/readme//img3.png)
+
+
+![](/images/readme//img2.png)
+
+
+![](/images/readme//img1.png)
+
+
+#### 感谢   
+
+本博客在[Vno Jekyll](https://github.com/onevcat/vno-jekyll)基础上修改的。  
