@@ -1,9 +1,9 @@
-# Malt
+# Cause
 
-Event marketing template for Jekyll. Browse through a [live demo](https://whispering-boat.cloudvent.net/).
-Increase the web presence of your event with this configurable theme.
+Not for profit themed template for Jekyll. Browse through a [live demo](https://clean-oryx.cloudvent.net/).
+Increase the web presence of a not for profit or cause website with this configurable theme.
 
-![Malt](images/_screenshot.jpg)
+![Cause](images/_screenshot.jpg)
 
 CloudCannon was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
 
@@ -11,15 +11,14 @@ Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Ac
 
 ## Features
 
-* Pre-built page
+* Pre-built pages
 * Pre-styled components
+* Configurable footer
 * Optimised for editing in [CloudCannon](http://cloudcannon.com/)
 * SEO tags
 * Google Analytics
-* [EventBrite](https://www.eventbrite.com/)
-* Contact Form
-* Featured
-* Image Gallery
+* [Donorbox](https://donorbox.org/)
+* [MailChimp](https://mailchimp.com/)
 
 ## Setup
 
@@ -29,7 +28,7 @@ Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Ac
 
 ## Develop
 
-Malt was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+Cause was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
 
 Install the dependencies with [Bundler](http://bundler.io/):
 
@@ -45,7 +44,7 @@ $ bundle exec jekyll serve
 
 ## Editing
 
-Malt is already optimised for updating pages, company details and footer elements in CloudCannon.
+Cause is already optimised for updating pages, company details and footer elements in CloudCannon.
 
 ## SEO Tag
 
@@ -54,18 +53,27 @@ This site uses the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) pl
 ## Google Analytics
 
 [Google Analytics](https://www.google.com/analytics/) is a third party website analytics tool. To install:
+1. Add your Google Analytics key to `_config.yml`
+2. Run your site in production `JEKYLL_ENV=production`. This is the default in CloudCannon and GitHub Pages.
 
-1. Add your Google Analytics key to `_config.yml`.
-2. Run your site in production `JEKYLL_ENV=production` (the default for CloudCannon and GitHub Pages).
+## Donorbox
 
-## EventBrite
+[Donorbox](https://donorbox.org/) is a third party embeddable donation form for websites. To install:
 
-[EventBrite](https://www.eventbrite.com/) is a third party embeddable event module for websites. To install:
+1. Set up a campaign on Donorbox
+2. Copy the embed code from the Dashboard screen
+3. Paste it into `donation_embed` in `_config.yml`
 
-1. Create an event on EventBrite.
-2. Copy the Ticket Form embed code from the Widgets menu item.
-3. Paste it into `eventbrite_embed` in `_config.yml`.
+## Mailchimp
 
-## Image gallery / Featured
+[Mailchimp](https://mailchimp.com/) is a third party embeddable newsletter for websites. To install:
 
-The image gallery is populated by a front matter array in `index.html`. To add items just copy the existing structure.
+1. Set up a campaign on Mailchimp
+2. Find the embed code for the sign up form
+3. Copy the `<form>`'s action url
+4. Paste it into `newsletter_action` in `_config.yml`
+
+### Company details
+
+* Reused around the site to save multiple editing locations.
+* Set in the *Data* / *Company* section.
